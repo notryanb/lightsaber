@@ -5,23 +5,23 @@ describe 'Get Request' do
   #-------- READ TESTS
   it "Should get the route" do
     get '/sealions'
-    expect(last_response).to be_redirect
+    expect(last_response).to be_ok
   end
 end
 
   #-------- CREATE TESTS
 describe 'GET Request' do
-  let(:student_1) {Sealion.create(name:"Hoa")}
+  # let(:student_1) {Sealion.create(name:"Hoa")}
 
     it 'Should be ok' do
       get '/sealions/new'
       expect(last_response).to be_ok
     end
 
-    it 'Should follow redirection' do
-      post '/sealions/new/:name, params =>{:name=>"Ryan"}'
-      expect(last_response).to be_redirect
-    end
+    # it 'Should follow redirection' do
+    #   post '/sealions/new/:name, params =>{:name=>"Ryan"}'
+    #   expect(last_response).to be_redirect
+    # end
 end 
 
 # describe 'POST Request' do
