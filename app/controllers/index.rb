@@ -12,7 +12,7 @@ end
 
 #Get the new entry form
 get '/sealions/new' do
-  erb :'new'
+  erb :new
 end
 
 #Show Individual Entry
@@ -50,7 +50,7 @@ put '/sealions/:id' do
     end
 
   else
-    [404, "No blog post for you."]
+    [404, "On internet, 404 errors YOU!"]
   end
 end
 
