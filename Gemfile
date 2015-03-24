@@ -4,6 +4,7 @@ gem 'rake'
 gem 'activerecord'
 gem 'pg'
 gem 'jasmine'
+gem 'faker'
 
 
 group :test do

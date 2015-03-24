@@ -1,4 +1,3 @@
-Sealion.create(name:"Ryan")
-Sealion.create(name:"Evenandi")
-Sealion.create(name:"Stephanie")
-Sealion.create(name:"Ben")
+require 'faker'
+
+Sealion.create(first_name:Faker::name, last_name: Faker::Name:last_name)
