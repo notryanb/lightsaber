@@ -3,6 +3,7 @@ gem 'sinatra'
 gem 'rake'
 gem 'activerecord'
 gem 'pg'
+gem 'jasmine'
 
 
 group :test do

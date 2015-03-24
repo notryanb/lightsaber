@@ -1,3 +1,4 @@
+require 'jasmine'
 require_relative 'environment'
 
 # require 'active_record'
@@ -103,4 +104,13 @@ namespace :db do
       system "rake db:migrate RACK_ENV=test"
     end
   end
+end
+
+
+load 'jasmine/tasks/jasmine.rake'
+
+namespace :test do
+ task :jasmine do
+   abort 'No Jasmine run (sudo) gem instal jasmine'
+ end
 end
