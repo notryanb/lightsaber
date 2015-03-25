@@ -1,3 +1,6 @@
 require 'faker'
 
-Sealion.create(first_name:Faker::name, last_name: Faker::Name:last_name)
+
+20.times do
+  Sealion.create(name:Faker::Name.name)
+end

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- /Users/RyanB/Desktop/DBC-stuff/phase-2/lightsaber/lightsaber/app/public/javascripts -->
   <script src='javascripts/main.js'></script>
   <title><%= @title || "LightSaber" %></title>
 </head>
-<body>
+<body onload="errorModule()">
+  <header>
+    <%= erb :_error %>
+  </header>
+    <button type="button" id="error">Show Error!</button>
+    <button type="button" id="hidden">Hide Error!</button>
+    <button type="button" id="edit">Edit Error Message!</button>
+    <br />
     <%= yield %>
 </body>
 </html>
